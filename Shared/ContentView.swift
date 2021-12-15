@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                NavigationLink(destination: SettingsView()) {
+                    Text("Settings")
+                }
+                .padding()
+                NavigationLink(destination: JsonView()) {
+                    Text("Json")
+                }
+                Spacer()
+            }
+        }
+        .frame(width: 800, height: 600, alignment: .top)
     }
 }
 
