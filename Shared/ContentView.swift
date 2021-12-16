@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var hacked = false
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: SettingsView()) {
+                NavigationLink(destination: SettingsView(hacked: $hacked)) {
                     Text("Settings")
                 }
                 .padding()

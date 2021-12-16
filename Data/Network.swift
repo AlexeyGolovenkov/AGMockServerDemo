@@ -27,4 +27,12 @@ class NetworkDataProvider {
         let parsedRespose = try JSONDecoder().decode(FeedResponse.self, from: data)
         return parsedRespose
     }
+    
+    func addHandler() {
+        AGMockServer.shared.registerHandler(FeedHandler())
+    }
+    
+    func removeHandler() {
+        AGMockServer.shared.unregisterAllHandlers()
+    }
 }

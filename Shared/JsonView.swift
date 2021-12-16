@@ -26,7 +26,20 @@ struct JsonView: View {
                 if let items = response.items {
                     List() {
                         ForEach (items, id: \.id) { news in
-                            Text(news.title ?? "No title")
+                            HStack {
+                                Text("Title")
+                                Text(news.title ?? "No title")
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            
+                            HStack {
+                                Text("HTML")
+                                Text(news.content_html ?? "No content")
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            
                         }
                     }
                 } else {
