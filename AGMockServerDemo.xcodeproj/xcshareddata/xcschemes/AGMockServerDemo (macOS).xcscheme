@@ -40,12 +40,22 @@
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A21C4E6276A88FB00AC6D55"
                BuildableName = "Tests macOS.xctest"
                BlueprintName = "Tests macOS"
+               ReferencedContainer = "container:AGMockServerDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5AEC45AC276BD2B40087BADC"
+               BuildableName = "MacTests.xctest"
+               BlueprintName = "MacTests"
                ReferencedContainer = "container:AGMockServerDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>

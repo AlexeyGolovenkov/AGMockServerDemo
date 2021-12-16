@@ -25,6 +25,13 @@
 		5A21C50E276A923800AC6D55 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C50D276A923800AC6D55 /* Network.swift */; };
 		5A21C50F276A923800AC6D55 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C50D276A923800AC6D55 /* Network.swift */; };
 		5A21C512276A937000AC6D55 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 5A21C511276A937000AC6D55 /* AGMockServer */; };
+		5AEC45B0276BD2B40087BADC /* MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45AF276BD2B40087BADC /* MacTests.swift */; };
+		5AEC45B7276BD4870087BADC /* FeedResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45B6276BD4870087BADC /* FeedResponseItem.swift */; };
+		5AEC45B8276BD4870087BADC /* FeedResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45B6276BD4870087BADC /* FeedResponseItem.swift */; };
+		5AEC45BA276BD5130087BADC /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45B9276BD5130087BADC /* FeedResponse.swift */; };
+		5AEC45BB276BD5130087BADC /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45B9276BD5130087BADC /* FeedResponse.swift */; };
+		5AEC45BE276BD6600087BADC /* FeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45BD276BD6600087BADC /* FeedHandler.swift */; };
+		5AEC45BF276BD6600087BADC /* FeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45BD276BD6600087BADC /* FeedHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 			remoteInfo = "AGMockServerDemo (iOS)";
 		};
 		5A21C4E8276A88FB00AC6D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A21C4C2276A88FB00AC6D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A21C4D3276A88FB00AC6D55;
+			remoteInfo = "AGMockServerDemo (macOS)";
+		};
+		5AEC45B1276BD2B40087BADC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5A21C4C2276A88FB00AC6D55 /* Project object */;
 			proxyType = 1;
@@ -60,6 +74,11 @@
 		5A21C506276A8EA500AC6D55 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5A21C509276A8EC200AC6D55 /* JsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonView.swift; sourceTree = "<group>"; };
 		5A21C50D276A923800AC6D55 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5AEC45AD276BD2B40087BADC /* MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEC45AF276BD2B40087BADC /* MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacTests.swift; sourceTree = "<group>"; };
+		5AEC45B6276BD4870087BADC /* FeedResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponseItem.swift; sourceTree = "<group>"; };
+		5AEC45B9276BD5130087BADC /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		5AEC45BD276BD6600087BADC /* FeedHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,17 +112,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AEC45AA276BD2B40087BADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5A21C4C1276A88FB00AC6D55 = {
 			isa = PBXGroup;
 			children = (
+				5AEC45BC276BD64E0087BADC /* Handlers */,
 				5A21C50C276A921600AC6D55 /* Data */,
 				5A21C4C6276A88FB00AC6D55 /* Shared */,
 				5A21C4D5276A88FB00AC6D55 /* macOS */,
 				5A21C4DE276A88FB00AC6D55 /* Tests iOS */,
 				5A21C4EA276A88FB00AC6D55 /* Tests macOS */,
+				5AEC45AE276BD2B40087BADC /* MacTests */,
 				5A21C4CF276A88FB00AC6D55 /* Products */,
 				5A21C510276A937000AC6D55 /* Frameworks */,
 			);
@@ -128,6 +156,7 @@
 				5A21C4D4276A88FB00AC6D55 /* AGMockServerDemo.app */,
 				5A21C4DB276A88FB00AC6D55 /* Tests iOS.xctest */,
 				5A21C4E7276A88FB00AC6D55 /* Tests macOS.xctest */,
+				5AEC45AD276BD2B40087BADC /* MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				5A21C50D276A923800AC6D55 /* Network.swift */,
+				5AEC45B6276BD4870087BADC /* FeedResponseItem.swift */,
+				5AEC45B9276BD5130087BADC /* FeedResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -171,6 +202,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AEC45AE276BD2B40087BADC /* MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AEC45AF276BD2B40087BADC /* MacTests.swift */,
+			);
+			path = MacTests;
+			sourceTree = "<group>";
+		};
+		5AEC45BC276BD64E0087BADC /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				5AEC45BD276BD6600087BADC /* FeedHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +299,24 @@
 			productReference = 5A21C4E7276A88FB00AC6D55 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5AEC45AC276BD2B40087BADC /* MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AEC45B5276BD2B40087BADC /* Build configuration list for PBXNativeTarget "MacTests" */;
+			buildPhases = (
+				5AEC45A9276BD2B40087BADC /* Sources */,
+				5AEC45AA276BD2B40087BADC /* Frameworks */,
+				5AEC45AB276BD2B40087BADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AEC45B2276BD2B40087BADC /* PBXTargetDependency */,
+			);
+			name = MacTests;
+			productName = MacTests;
+			productReference = 5AEC45AD276BD2B40087BADC /* MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +338,10 @@
 						TestTargetID = 5A21C4CD276A88FB00AC6D55;
 					};
 					5A21C4E6276A88FB00AC6D55 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 5A21C4D3276A88FB00AC6D55;
+					};
+					5AEC45AC276BD2B40087BADC = {
 						CreatedOnToolsVersion = 13.2;
 						TestTargetID = 5A21C4D3276A88FB00AC6D55;
 					};
@@ -298,6 +367,7 @@
 				5A21C4D3276A88FB00AC6D55 /* AGMockServerDemo (macOS) */,
 				5A21C4DA276A88FB00AC6D55 /* Tests iOS */,
 				5A21C4E6276A88FB00AC6D55 /* Tests macOS */,
+				5AEC45AC276BD2B40087BADC /* MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,6 +403,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AEC45AB276BD2B40087BADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -341,9 +418,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A21C50E276A923800AC6D55 /* Network.swift in Sources */,
+				5AEC45BA276BD5130087BADC /* FeedResponse.swift in Sources */,
+				5AEC45B7276BD4870087BADC /* FeedResponseItem.swift in Sources */,
 				5A21C507276A8EA500AC6D55 /* SettingsView.swift in Sources */,
 				5A21C4F1276A88FB00AC6D55 /* ContentView.swift in Sources */,
 				5A21C50A276A8EC200AC6D55 /* JsonView.swift in Sources */,
+				5AEC45BE276BD6600087BADC /* FeedHandler.swift in Sources */,
 				5A21C4EF276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,9 +433,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A21C50F276A923800AC6D55 /* Network.swift in Sources */,
+				5AEC45BB276BD5130087BADC /* FeedResponse.swift in Sources */,
+				5AEC45B8276BD4870087BADC /* FeedResponseItem.swift in Sources */,
 				5A21C508276A8EA500AC6D55 /* SettingsView.swift in Sources */,
 				5A21C4F2276A88FB00AC6D55 /* ContentView.swift in Sources */,
 				5A21C50B276A8EC200AC6D55 /* JsonView.swift in Sources */,
+				5AEC45BF276BD6600087BADC /* FeedHandler.swift in Sources */,
 				5A21C4F0276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +461,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AEC45A9276BD2B40087BADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEC45B0276BD2B40087BADC /* MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -390,6 +481,11 @@
 			isa = PBXTargetDependency;
 			target = 5A21C4D3276A88FB00AC6D55 /* AGMockServerDemo (macOS) */;
 			targetProxy = 5A21C4E8276A88FB00AC6D55 /* PBXContainerItemProxy */;
+		};
+		5AEC45B2276BD2B40087BADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A21C4D3276A88FB00AC6D55 /* AGMockServerDemo (macOS) */;
+			targetProxy = 5AEC45B1276BD2B40087BADC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -701,6 +797,44 @@
 			};
 			name = Release;
 		};
+		5AEC45B3276BD2B40087BADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BRG68T9M9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.agsoft.MacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AGMockServerDemo.app/Contents/MacOS/AGMockServerDemo";
+			};
+			name = Debug;
+		};
+		5AEC45B4276BD2B40087BADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BRG68T9M9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.agsoft.MacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AGMockServerDemo.app/Contents/MacOS/AGMockServerDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -745,6 +879,15 @@
 			buildConfigurations = (
 				5A21C501276A88FB00AC6D55 /* Debug */,
 				5A21C502276A88FB00AC6D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AEC45B5276BD2B40087BADC /* Build configuration list for PBXNativeTarget "MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AEC45B3276BD2B40087BADC /* Debug */,
+				5AEC45B4276BD2B40087BADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
