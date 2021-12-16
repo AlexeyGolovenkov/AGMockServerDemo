@@ -8,7 +8,7 @@
 import Foundation
 
 struct FeedResponseItem: Decodable {
-    let id: String?
+    let id: String
     let title: String?
     let content_html: String?
     let url: String?
