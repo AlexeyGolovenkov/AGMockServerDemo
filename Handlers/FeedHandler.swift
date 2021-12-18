@@ -22,7 +22,7 @@ class FeedHandler: AGMRequestHandler {
     "items": [
             {
                 "id": "http://jsonfeed.micro.blog/2020/08/07/json-feed-version.html",
-                "title": "JSON Feed version 1.1",
+                "title": "Hacked Feed Item",
                 "content_html": "Hello world!",
                 "date_published": "2020-08-07T11:44:36-05:00",
                 "url": "Localhost"

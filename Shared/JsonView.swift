@@ -9,18 +9,32 @@ import SwiftUI
 
 struct JsonView: View {
     @State var response: FeedResponse?
+    @State var hacked: Bool = false
     var body: some View {
         VStack {
-            Button("Load feed") {
-                Task {
-                    do {
-                        response = try await NetworkDataProvider.shared.feed()
+            HStack {
+                Toggle("Hacked response", isOn: $hacked)
+                    .onChange(of: hacked) { value in
+                        if hacked {
+                            NetworkDataProvider.shared.addHandler()
+                        } else {
+                            NetworkDataProvider.shared.removeHandler()
+                        }
                     }
-                    catch {
-                        
+                Spacer()
+                Button("Load feed") {
+                    Task {
+                        do {
+                            response = try await NetworkDataProvider.shared.feed()
+                        }
+                        catch {
+                            
+                        }
                     }
                 }
             }
+            .padding()
+            
             if let response = self.response {
                 Text(response.title ?? "Unknown title")
                 if let items = response.items {
@@ -30,15 +44,24 @@ struct JsonView: View {
                                 Text("Title")
                                 Text(news.title ?? "No title")
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .font(.title)
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            
+                            HStack {
+                                Text("Date")
+                                Text(news.date_published ?? "No Date")
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                             }
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             
                             HStack {
                                 Text("HTML")
+                                    .frame(alignment: .top)
                                 Text(news.content_html ?? "No content")
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                             }
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                             
                         }
                     }

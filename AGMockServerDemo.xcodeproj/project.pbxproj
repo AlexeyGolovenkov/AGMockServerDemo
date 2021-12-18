@@ -18,8 +18,6 @@
 		5A21C4F3276A88FB00AC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */; };
 		5A21C4F4276A88FB00AC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */; };
 		5A21C505276A8AE600AC6D55 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 5A21C504276A8AE600AC6D55 /* AGMockServer */; };
-		5A21C507276A8EA500AC6D55 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C506276A8EA500AC6D55 /* SettingsView.swift */; };
-		5A21C508276A8EA500AC6D55 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C506276A8EA500AC6D55 /* SettingsView.swift */; };
 		5A21C50A276A8EC200AC6D55 /* JsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C509276A8EC200AC6D55 /* JsonView.swift */; };
 		5A21C50B276A8EC200AC6D55 /* JsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C509276A8EC200AC6D55 /* JsonView.swift */; };
 		5A21C50E276A923800AC6D55 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C50D276A923800AC6D55 /* Network.swift */; };
@@ -71,7 +69,6 @@
 		5A21C4E7276A88FB00AC6D55 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A21C4EB276A88FB00AC6D55 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5A21C4ED276A88FB00AC6D55 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		5A21C506276A8EA500AC6D55 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5A21C509276A8EC200AC6D55 /* JsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonView.swift; sourceTree = "<group>"; };
 		5A21C50D276A923800AC6D55 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		5AEC45AD276BD2B40087BADC /* MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +139,6 @@
 			children = (
 				5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */,
 				5A21C4C8276A88FB00AC6D55 /* ContentView.swift */,
-				5A21C506276A8EA500AC6D55 /* SettingsView.swift */,
 				5A21C509276A8EC200AC6D55 /* JsonView.swift */,
 				5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */,
 			);
@@ -420,7 +416,6 @@
 				5A21C50E276A923800AC6D55 /* Network.swift in Sources */,
 				5AEC45BA276BD5130087BADC /* FeedResponse.swift in Sources */,
 				5AEC45B7276BD4870087BADC /* FeedResponseItem.swift in Sources */,
-				5A21C507276A8EA500AC6D55 /* SettingsView.swift in Sources */,
 				5A21C4F1276A88FB00AC6D55 /* ContentView.swift in Sources */,
 				5A21C50A276A8EC200AC6D55 /* JsonView.swift in Sources */,
 				5AEC45BE276BD6600087BADC /* FeedHandler.swift in Sources */,
@@ -435,7 +430,6 @@
 				5A21C50F276A923800AC6D55 /* Network.swift in Sources */,
 				5AEC45BB276BD5130087BADC /* FeedResponse.swift in Sources */,
 				5AEC45B8276BD4870087BADC /* FeedResponseItem.swift in Sources */,
-				5A21C508276A8EA500AC6D55 /* SettingsView.swift in Sources */,
 				5A21C4F2276A88FB00AC6D55 /* ContentView.swift in Sources */,
 				5A21C50B276A8EC200AC6D55 /* JsonView.swift in Sources */,
 				5AEC45BF276BD6600087BADC /* FeedHandler.swift in Sources */,
