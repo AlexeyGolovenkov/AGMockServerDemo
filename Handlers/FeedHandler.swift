@@ -9,8 +9,10 @@ import Foundation
 import AGMockServer
 
 class FeedHandler: AGMRequestHandler {
+    // Handler will be called for every request with "feed.json" in url
     let urlFormat = "feed.json"
     
+    // Returns data to be sent for specified url
     func defaultData(for url: URL) -> Data {
         let textResponse = """
 {

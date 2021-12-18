@@ -16,7 +16,8 @@ enum NetworkError: Error {
 
 class NetworkDataProvider {
     static var shared = NetworkDataProvider()
-    
+
+    // Add AGMockServer object as a listener of our network responses
     var session: URLSession = AGMockServer.shared.hackedSession(for: URLSession.shared)
     
     func feed() async throws -> FeedResponse {
@@ -29,10 +30,12 @@ class NetworkDataProvider {
     }
     
     func addHandler() {
+        // Add custom handler for some requests
         AGMockServer.shared.registerHandler(FeedHandler())
     }
     
     func removeHandler() {
+        // Remove custom handlers. MockServer will not affect network requests any more
         AGMockServer.shared.unregisterAllHandlers()
     }
 }

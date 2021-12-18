@@ -16,8 +16,10 @@ struct JsonView: View {
                 Toggle("Hacked response", isOn: $hacked)
                     .onChange(of: hacked) { value in
                         if hacked {
+                            // Remove custom handlers. Mock server will not handle network requests
                             NetworkDataProvider.shared.addHandler()
                         } else {
+                            // Lets' set our own hadlers for server request
                             NetworkDataProvider.shared.removeHandler()
                         }
                     }
@@ -28,7 +30,7 @@ struct JsonView: View {
                             response = try await NetworkDataProvider.shared.feed()
                         }
                         catch {
-                            
+                            // Handle error here
                         }
                     }
                 }

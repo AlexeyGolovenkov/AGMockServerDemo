@@ -11,7 +11,7 @@ import SwiftUI
 struct AGMockServerDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JsonView()
         }
     }
 }

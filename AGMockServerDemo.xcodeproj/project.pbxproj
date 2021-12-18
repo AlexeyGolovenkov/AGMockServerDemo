@@ -13,8 +13,6 @@
 		5A21C4EE276A88FB00AC6D55 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4ED276A88FB00AC6D55 /* Tests_macOSLaunchTests.swift */; };
 		5A21C4EF276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */; };
 		5A21C4F0276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */; };
-		5A21C4F1276A88FB00AC6D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4C8276A88FB00AC6D55 /* ContentView.swift */; };
-		5A21C4F2276A88FB00AC6D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4C8276A88FB00AC6D55 /* ContentView.swift */; };
 		5A21C4F3276A88FB00AC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */; };
 		5A21C4F4276A88FB00AC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */; };
 		5A21C505276A8AE600AC6D55 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 5A21C504276A8AE600AC6D55 /* AGMockServer */; };
@@ -58,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGMockServerDemoApp.swift; sourceTree = "<group>"; };
-		5A21C4C8276A88FB00AC6D55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A21C4CE276A88FB00AC6D55 /* AGMockServerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGMockServerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A21C4D4276A88FB00AC6D55 /* AGMockServerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGMockServerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */,
-				5A21C4C8276A88FB00AC6D55 /* ContentView.swift */,
 				5A21C509276A8EC200AC6D55 /* JsonView.swift */,
 				5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */,
 			);
@@ -416,7 +412,6 @@
 				5A21C50E276A923800AC6D55 /* Network.swift in Sources */,
 				5AEC45BA276BD5130087BADC /* FeedResponse.swift in Sources */,
 				5AEC45B7276BD4870087BADC /* FeedResponseItem.swift in Sources */,
-				5A21C4F1276A88FB00AC6D55 /* ContentView.swift in Sources */,
 				5A21C50A276A8EC200AC6D55 /* JsonView.swift in Sources */,
 				5AEC45BE276BD6600087BADC /* FeedHandler.swift in Sources */,
 				5A21C4EF276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */,
@@ -430,7 +425,6 @@
 				5A21C50F276A923800AC6D55 /* Network.swift in Sources */,
 				5AEC45BB276BD5130087BADC /* FeedResponse.swift in Sources */,
 				5AEC45B8276BD4870087BADC /* FeedResponseItem.swift in Sources */,
-				5A21C4F2276A88FB00AC6D55 /* ContentView.swift in Sources */,
 				5A21C50B276A8EC200AC6D55 /* JsonView.swift in Sources */,
 				5AEC45BF276BD6600087BADC /* FeedHandler.swift in Sources */,
 				5A21C4F0276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */,
