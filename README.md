@@ -1,2 +1,2 @@
 # AGMockServerDemo
-Demo app for AGMockServer framework
+Demo app for [AGMockServer](https://github.com/AlexeyGolovenkov/AGMockServer) framework.
