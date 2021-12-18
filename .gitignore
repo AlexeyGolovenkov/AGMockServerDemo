@@ -89,3 +89,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 .DS_Store
+AGMockServerDemo.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
