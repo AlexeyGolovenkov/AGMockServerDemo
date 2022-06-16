@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B6F850285B58E900CFFA30 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 18B6F84F285B58E900CFFA30 /* AGMockServer */; };
+		18B6F852285B590400CFFA30 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 18B6F851285B590400CFFA30 /* AGMockServer */; };
 		5A21C4EF276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */; };
 		5A21C4F0276A88FB00AC6D55 /* AGMockServerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C4C7276A88FB00AC6D55 /* AGMockServerDemoApp.swift */; };
 		5A21C4F3276A88FB00AC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */; };
 		5A21C4F4276A88FB00AC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A21C4C9276A88FB00AC6D55 /* Assets.xcassets */; };
-		5A21C505276A8AE600AC6D55 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 5A21C504276A8AE600AC6D55 /* AGMockServer */; };
 		5A21C50A276A8EC200AC6D55 /* JsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C509276A8EC200AC6D55 /* JsonView.swift */; };
 		5A21C50B276A8EC200AC6D55 /* JsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C509276A8EC200AC6D55 /* JsonView.swift */; };
 		5A21C50E276A923800AC6D55 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C50D276A923800AC6D55 /* Network.swift */; };
 		5A21C50F276A923800AC6D55 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21C50D276A923800AC6D55 /* Network.swift */; };
-		5A21C512276A937000AC6D55 /* AGMockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 5A21C511276A937000AC6D55 /* AGMockServer */; };
 		5AA0A0CB276E44FC005186C6 /* AGMockServerDemoiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0A0CA276E44FC005186C6 /* AGMockServerDemoiOSTests.swift */; };
 		5AEC45B0276BD2B40087BADC /* MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45AF276BD2B40087BADC /* MacTests.swift */; };
 		5AEC45B7276BD4870087BADC /* FeedResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC45B6276BD4870087BADC /* FeedResponseItem.swift */; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A21C505276A8AE600AC6D55 /* AGMockServer in Frameworks */,
+				18B6F850285B58E900CFFA30 /* AGMockServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A21C512276A937000AC6D55 /* AGMockServer in Frameworks */,
+				18B6F852285B590400CFFA30 /* AGMockServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +196,7 @@
 			);
 			name = "AGMockServerDemo (iOS)";
 			packageProductDependencies = (
-				5A21C504276A8AE600AC6D55 /* AGMockServer */,
+				18B6F84F285B58E900CFFA30 /* AGMockServer */,
 			);
 			productName = "AGMockServerDemo (iOS)";
 			productReference = 5A21C4CE276A88FB00AC6D55 /* AGMockServerDemo.app */;
@@ -216,7 +216,7 @@
 			);
 			name = "AGMockServerDemo (macOS)";
 			packageProductDependencies = (
-				5A21C511276A937000AC6D55 /* AGMockServer */,
+				18B6F851285B590400CFFA30 /* AGMockServer */,
 			);
 			productName = "AGMockServerDemo (macOS)";
 			productReference = 5A21C4D4276A88FB00AC6D55 /* AGMockServerDemo.app */;
@@ -294,7 +294,7 @@
 			);
 			mainGroup = 5A21C4C1276A88FB00AC6D55;
 			packageReferences = (
-				5A21C503276A8AE600AC6D55 /* XCRemoteSwiftPackageReference "AGMockServer" */,
+				18B6F84E285B58E900CFFA30 /* XCRemoteSwiftPackageReference "AGMockServer" */,
 			);
 			productRefGroup = 5A21C4CF276A88FB00AC6D55 /* Products */;
 			projectDirPath = "";
@@ -758,25 +758,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5A21C503276A8AE600AC6D55 /* XCRemoteSwiftPackageReference "AGMockServer" */ = {
+		18B6F84E285B58E900CFFA30 /* XCRemoteSwiftPackageReference "AGMockServer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:AlexeyGolovenkov/AGMockServer.git";
+			repositoryURL = "https://github.com/AlexeyGolovenkov/AGMockServer.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5A21C504276A8AE600AC6D55 /* AGMockServer */ = {
+		18B6F84F285B58E900CFFA30 /* AGMockServer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5A21C503276A8AE600AC6D55 /* XCRemoteSwiftPackageReference "AGMockServer" */;
+			package = 18B6F84E285B58E900CFFA30 /* XCRemoteSwiftPackageReference "AGMockServer" */;
 			productName = AGMockServer;
 		};
-		5A21C511276A937000AC6D55 /* AGMockServer */ = {
+		18B6F851285B590400CFFA30 /* AGMockServer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5A21C503276A8AE600AC6D55 /* XCRemoteSwiftPackageReference "AGMockServer" */;
+			package = 18B6F84E285B58E900CFFA30 /* XCRemoteSwiftPackageReference "AGMockServer" */;
 			productName = AGMockServer;
 		};
 /* End XCSwiftPackageProductDependency section */
